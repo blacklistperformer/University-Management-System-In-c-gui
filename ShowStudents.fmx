@@ -1,0 +1,152 @@
+object ShowStudentsForm: TShowStudentsForm
+  Left = 0
+  Top = 0
+  Caption = 'JNU UMS | Show Students'
+  ClientHeight = 900
+  ClientWidth = 1600
+  Fill.Color = x69696969
+  Fill.Kind = Solid
+  WindowState = wsMaximized
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object StringGrid1: TStringGrid
+    CanFocus = True
+    ClipChildren = True
+    Position.X = 64.000000000000000000
+    Position.Y = 167.000000000000000000
+    Size.Width = 1360.000000000000000000
+    Size.Height = 497.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    RowCount = 5
+    Viewport.Width = 1356.000000000000000000
+    Viewport.Height = 456.000000000000000000
+  end
+  object Back: TButton
+    StyledSettings = [Family, FontColor]
+    Position.X = 64.000000000000000000
+    Position.Y = 784.000000000000000000
+    Size.Width = 209.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Text = 'Back'
+    TextSettings.Font.Size = 18.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    OnClick = BackClick
+  end
+  object BindNavigator1: TBindNavigator
+    Position.X = 64.000000000000000000
+    Position.Y = 672.000000000000000000
+    Size.Width = 1360.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    DataSource = BindSourceDB1
+    xRadius = 4.000000000000000000
+    yRadius = 4.000000000000000000
+  end
+  object Banner: TLabel
+    StyledSettings = [Family]
+    Position.X = 64.000000000000000000
+    Position.Y = 72.000000000000000000
+    Size.Width = 441.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 28.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    TextSettings.FontColor = claBeige
+    Text = 'Showing all the Students'
+    TabOrder = 25
+  end
+  object EmployeeConnection: TFDConnection
+    Params.Strings = (
+      'ConnectionDef=EMPLOYEE')
+    UpdateOptions.AssignedValues = [uvUpdateChngFields, uvLockMode, uvRefreshMode, uvCheckRequired, uvCheckReadOnly]
+    UpdateOptions.UpdateChangedFields = False
+    UpdateOptions.LockMode = lmOptimistic
+    UpdateOptions.RefreshMode = rmManual
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.CheckReadOnly = False
+    Connected = True
+    LoginPrompt = False
+    Left = 739
+    Top = 94
+  end
+  object StudentsTable: TFDQuery
+    Active = True
+    Connection = EmployeeConnection
+    SQL.Strings = (
+      'SELECT * FROM STUDENTS')
+    Left = 810
+    Top = 49
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = StudentsTable
+    ScopeMappings = <>
+    Left = 728
+    Top = 48
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 660
+    Top = 45
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = StringGrid1
+      Columns = <>
+    end
+  end
+  object SQLConnection1: TSQLConnection
+    ConnectionName = 'IBConnection'
+    DriverName = 'Interbase'
+    Params.Strings = (
+      'DriverUnit=Data.DBXInterBase'
+      
+        'DriverPackageLoader=TDBXDynalinkDriverLoader,DbxCommonDriver280.' +
+        'bpl'
+      
+        'DriverAssemblyLoader=Borland.Data.TDBXDynalinkDriverLoader,Borla' +
+        'nd.Data.DbxCommonDriver,Version=24.0.0.0,Culture=neutral,PublicK' +
+        'eyToken=91d62ebb5b0d1b1b'
+      
+        'MetaDataPackageLoader=TDBXInterbaseMetaDataCommandFactory,DbxInt' +
+        'erBaseDriver280.bpl'
+      
+        'MetaDataAssemblyLoader=Borland.Data.TDBXInterbaseMetaDataCommand' +
+        'Factory,Borland.Data.DbxInterBaseDriver,Version=24.0.0.0,Culture' +
+        '=neutral,PublicKeyToken=91d62ebb5b0d1b1b'
+      'GetDriverFunc=getSQLDriverINTERBASE'
+      'LibraryName=dbxint.dll'
+      'LibraryNameOsx=libsqlib.dylib'
+      'VendorLib=GDS32.DLL'
+      'VendorLibWin64=ibclient64.dll'
+      'VendorLibOsx=libgds.dylib'
+      'Role=RoleName'
+      'MaxBlobSize=-1'
+      'TrimChar=False'
+      'DisplayDriverName=InterBase Server'
+      'SEP='
+      'DriverName=Interbase'
+      'Database=localhost:C:\DeleteMe\STUDENTS.ib'
+      'RoleName=RoleName'
+      'User_Name=sysdba'
+      'Password=masterkey'
+      'ServerCharSet='
+      'SQLDialect=3'
+      'ErrorResourceFile='
+      'LocaleCode=0000'
+      'BlobSize=-1'
+      'CommitRetain=False'
+      'WaitOnLocks=True'
+      'IsolationLevel=ReadCommitted'
+      'Trim Char=False')
+    Connected = True
+    Left = 664
+    Top = 96
+  end
+end

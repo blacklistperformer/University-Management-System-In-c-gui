@@ -1,0 +1,32 @@
+inherited StudentRegistrationForm_Surface: TStudentRegistrationForm_Surface
+  ClientHeight = 1920
+  ClientWidth = 1080
+  DesignerMasterStyle = 0
+  inherited ECE: TRadioButton
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+  end
+  inherited Male: TCheckBox
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+  end
+  inherited Female: TCheckBox
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+  end
+  inherited Other: TCheckBox
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+  end
+  inherited Back: TButton
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+  end
+  inherited mtech: TCheckBox
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+  end
+  inherited phd: TCheckBox
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+  end
+  inherited btech: TCheckBox
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+  end
+  inherited CSE: TRadioButton
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+  end
+end

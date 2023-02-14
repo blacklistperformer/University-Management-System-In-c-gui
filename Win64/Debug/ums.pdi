@@ -1,0 +1,17 @@
+DBXInterBaseDriver280.bpl
+DbxCommonDriver280.bpl
+FireDAC280.bpl
+FireDACCommon280.bpl
+FireDACCommonDriver280.bpl
+FireDACIBDriver280.bpl
+bindcomp280.bpl
+bindcompfmx280.bpl
+bindengine280.bpl
+dbexpress280.bpl
+dbrtl280.bpl
+fmx280.bpl
+fmxFireDAC280.bpl
+inet280.bpl
+inetdb280.bpl
+inetdbxpress280.bpl
+rtl280.bpl

@@ -1,0 +1,323 @@
+object SearchStudentForm: TSearchStudentForm
+  Left = 0
+  Top = 0
+  Caption = 'Search Student Details'
+  ClientHeight = 900
+  ClientWidth = 1600
+  Fill.Color = x69696969
+  Fill.Kind = Solid
+  WindowState = wsMaximized
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Back: TButton
+    StyledSettings = [Family, FontColor]
+    Position.X = 48.000000000000000000
+    Position.Y = 656.000000000000000000
+    Size.Width = 177.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 10
+    Text = 'Back'
+    TextSettings.Font.Size = 24.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    OnClick = BackClick
+  end
+  object Banner: TLabel
+    StyledSettings = [Family]
+    Position.X = 48.000000000000000000
+    Position.Y = 88.000000000000000000
+    Size.Width = 313.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 28.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    TextSettings.FontColor = claBeige
+    Text = 'Search Students'
+    TabOrder = 23
+  end
+  object Name: TRadioButton
+    StyledSettings = [Family, Style]
+    Position.X = 32.000000000000000000
+    Position.Y = 192.000000000000000000
+    TabOrder = 1
+    Text = 'Name'
+    TextSettings.Font.Size = 22.000000000000000000
+    TextSettings.FontColor = claBeige
+    OnChange = NameChange
+    object NameBox: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 1
+      Position.X = 136.000000000000000000
+      Size.Width = 233.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object Registration: TRadioButton
+    StyledSettings = [Family, Style]
+    Position.X = 32.000000000000000000
+    Position.Y = 248.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 24
+    Text = 'Registration'
+    TextSettings.Font.Size = 18.000000000000000000
+    TextSettings.FontColor = claBeige
+    OnChange = RegistrationChange
+    object RegistrationBox: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 2
+      Position.X = 136.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 233.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object Branch: TRadioButton
+    StyledSettings = [Family, Style]
+    Position.X = 32.000000000000000000
+    Position.Y = 312.000000000000000000
+    TabOrder = 25
+    Text = 'Branch'
+    TextSettings.Font.Size = 18.000000000000000000
+    TextSettings.FontColor = claBeige
+    OnChange = BranchChange
+  end
+  object CSE: TCheckBox
+    StyledSettings = [Family, Style]
+    Position.X = 168.000000000000000000
+    Position.Y = 312.000000000000000000
+    TabOrder = 3
+    Text = 'CSE'
+    TextSettings.Font.Size = 18.000000000000000000
+    TextSettings.FontColor = claBeige
+    OnChange = CSEChange
+  end
+  object ECE: TCheckBox
+    StyledSettings = [Family, Style]
+    Position.X = 312.000000000000000000
+    Position.Y = 312.000000000000000000
+    TabOrder = 4
+    Text = 'ECE'
+    TextSettings.Font.Size = 18.000000000000000000
+    TextSettings.FontColor = claBeige
+    OnChange = ECEChange
+  end
+  object Course: TRadioButton
+    StyledSettings = [Family, Style]
+    Position.X = 32.000000000000000000
+    Position.Y = 360.000000000000000000
+    TabOrder = 26
+    Text = 'Course'
+    TextSettings.Font.Size = 18.000000000000000000
+    TextSettings.FontColor = claBeige
+    OnChange = CourseChange
+  end
+  object BTech: TCheckBox
+    StyledSettings = [Family, Style]
+    Position.X = 168.000000000000000000
+    Position.Y = 360.000000000000000000
+    TabOrder = 5
+    Text = 'B.Tech'
+    TextSettings.Font.Size = 18.000000000000000000
+    TextSettings.FontColor = claBeige
+    OnChange = BTechChange
+  end
+  object MTech: TCheckBox
+    StyledSettings = [Family, Style]
+    Position.X = 281.000000000000000000
+    Position.Y = 360.000000000000000000
+    TabOrder = 6
+    Text = 'M.Tech'
+    TextSettings.Font.Size = 18.000000000000000000
+    TextSettings.FontColor = claBeige
+    OnChange = MTechChange
+  end
+  object PhD: TCheckBox
+    StyledSettings = [Family, Style]
+    Position.X = 384.000000000000000000
+    Position.Y = 360.000000000000000000
+    TabOrder = 7
+    Text = 'Ph.D'
+    TextSettings.Font.Size = 18.000000000000000000
+    TextSettings.FontColor = claBeige
+    OnChange = PhDChange
+  end
+  object Year: TRadioButton
+    StyledSettings = [Family, Style]
+    Position.X = 32.000000000000000000
+    Position.Y = 408.000000000000000000
+    Size.Width = 225.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 27
+    Text = 'Year of Registration'
+    TextSettings.Font.Size = 18.000000000000000000
+    TextSettings.FontColor = claBeige
+    OnChange = YearChange
+  end
+  object YearBox: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 8
+    Position.X = 224.000000000000000000
+    Position.Y = 411.000000000000000000
+    Size.Width = 177.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Search: TButton
+    StyledSettings = [Family, FontColor]
+    Position.X = 48.000000000000000000
+    Position.Y = 472.000000000000000000
+    Size.Width = 177.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 9
+    Text = 'Search'
+    TextSettings.Font.Size = 24.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    OnClick = SearchClick
+  end
+  object StringGrid1: TStringGrid
+    CanFocus = True
+    ClipChildren = True
+    Position.X = 456.000000000000000000
+    Position.Y = 160.000000000000000000
+    Size.Width = 1017.000000000000000000
+    Size.Height = 449.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 35
+    RowCount = 0
+    Viewport.Width = 1013.000000000000000000
+    Viewport.Height = 424.000000000000000000
+  end
+  object BindNavigator1: TBindNavigator
+    Position.X = 456.000000000000000000
+    Position.Y = 632.000000000000000000
+    Size.Width = 1010.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 41
+    DataSource = BindSourceDB1
+    xRadius = 4.000000000000000000
+    yRadius = 4.000000000000000000
+  end
+  object SQLConnection1: TSQLConnection
+    DriverName = 'Interbase'
+    Params.Strings = (
+      'DriverUnit=Data.DBXInterBase'
+      
+        'DriverPackageLoader=TDBXDynalinkDriverLoader,DbxCommonDriver280.' +
+        'bpl'
+      
+        'DriverAssemblyLoader=Borland.Data.TDBXDynalinkDriverLoader,Borla' +
+        'nd.Data.DbxCommonDriver,Version=24.0.0.0,Culture=neutral,PublicK' +
+        'eyToken=91d62ebb5b0d1b1b'
+      
+        'MetaDataPackageLoader=TDBXInterbaseMetaDataCommandFactory,DbxInt' +
+        'erBaseDriver280.bpl'
+      
+        'MetaDataAssemblyLoader=Borland.Data.TDBXInterbaseMetaDataCommand' +
+        'Factory,Borland.Data.DbxInterBaseDriver,Version=24.0.0.0,Culture' +
+        '=neutral,PublicKeyToken=91d62ebb5b0d1b1b'
+      'GetDriverFunc=getSQLDriverINTERBASE'
+      'LibraryName=dbxint.dll'
+      'LibraryNameOsx=libsqlib.dylib'
+      'VendorLib=GDS32.DLL'
+      'VendorLibWin64=ibclient64.dll'
+      'VendorLibOsx=libgds.dylib'
+      'Database=localhost:C:\Users\Avadh\Desktop\DeleteMe\STUDENTS.ib'
+      'User_Name=sysdba'
+      'Password=masterkey'
+      'Role=RoleName'
+      'MaxBlobSize=-1'
+      'LocaleCode=0000'
+      'IsolationLevel=ReadCommitted'
+      'SQLDialect=3'
+      'CommitRetain=False'
+      'WaitOnLocks=True'
+      'TrimChar=False'
+      'DisplayDriverName=InterBase Server'
+      'BlobSize=-1'
+      'ErrorResourceFile='
+      'RoleName=RoleName'
+      'ServerCharSet='
+      'Trim Char=False'
+      'SEP=')
+    Connected = True
+    Left = 304
+    Top = 448
+  end
+  object SQLQueryTable1: TSQLQueryTableProducer
+    Columns = <
+      item
+        FieldName = 'NAME'
+      end
+      item
+        FieldName = 'EMAIL'
+      end
+      item
+        FieldName = 'PHONE'
+      end
+      item
+        FieldName = 'ADDRESS'
+      end
+      item
+        FieldName = 'MOTHER'
+      end
+      item
+        FieldName = 'FATHER'
+      end
+      item
+        FieldName = 'GENDER'
+      end
+      item
+        FieldName = 'BRANCH'
+      end
+      item
+        FieldName = 'COURSE'
+      end
+      item
+        FieldName = 'REGISTRATION'
+      end
+      item
+        FieldName = 'YEAR_ADMISSION'
+      end>
+    Query = SQLQuery1
+    Left = 288
+    Top = 584
+  end
+  object SQLQuery1: TSQLQuery
+    GetMetadata = True
+    MaxBlobSize = -1
+    Params = <>
+    SQL.Strings = (
+      'SELECT * FROM STUDENTS'
+      '')
+    SQLConnection = SQLConnection1
+    Left = 304
+    Top = 520
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = SQLQuery1
+    ScopeMappings = <>
+    Left = 384
+    Top = 448
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = StringGrid1
+      Columns = <>
+    end
+  end
+end

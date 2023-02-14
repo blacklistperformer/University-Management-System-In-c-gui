@@ -1,0 +1,49 @@
+,,,,,,,,,,
+,,,,,,,,,,
+ava,ava,ava,ava,ava,ava,CSE,Male,ava,B.Tech,ava
+ava,ava,ava,ava,ava,ava,CSE,Male,ava,B.Tech,ava
+,,,,,,,,,,
+,,,,,,,,,,
+ava,ava,ava,ava,ava,ava,CSE,Male,ava,B.Tech,ava
+ava,ava,ava,ava,ava,ava,CSE,Male,ava,B.Tech,ava
+ava,ava,ava,ava,ava,ava,CSE,Female,ava,B.Tech,ava
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+ava,ava,aav,ava,ava,ava,CSE,Male,ava,B.Tech,ava
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+ava,avaa,ava,ava,ava,ava,CSE,Male,ava,Ph.D,ava
+ava,aav,ava,ava,avav,ava,CSE,Male,ava,Ph.D,ava
+Kshama,kshamakaemail,kshamakepapa,kshamakima,kshamakano,Shipra,CSE,Female,2020240169,M.Tech,2020
+ok1,ok2,ok3,ok4,ok5,ok8,ECE,Female,ok7,Ph.D,ok6
+1,2,3,4,5,6,ECE,Male,7,B.Tech,8
+Neeraj Nikhil Roy,neerajroy06502@gmail.com,Nikhil Chandra Roy,Biva Nikhil Roy,9783938347,Room no 26 Chandrabhaga Hostel Jawaharlal Nehru University New Delhi 110067,CSE,Male,200310511254,B.Tech,2020
+Kshama Meena,kshamameena7@gmail.com,abc,abc,7232002038,Shipra Hostel Jawaharlal Nehru University New Delhi 110067,CSE,Female,2003,B.Tech,2020
+Avadhesh Kumar,avadheshkumarajay@gmail.com,abc,abc,7248295396,Room no 206 Lohit Hostel Jawaharlal Nehru University New Delhi 110067,CSE,Male,2003,B.Tech,2020
+Avadhesh Kumar,avadheshkumarajay@gmail.com,Mr. Ajay Kumar,Mrs. Anita Devi,7248295396,Firozabad,CSE,Male,200310881756,B.Tech,2020
+Neeraj Nikhil Roy,Neeraj@gmail.com,Babu,Mami,9696966969,Bhushawal,CSE,Male,2020240169,B.Tech,2020
+kshama Meena,KshamaKaEmail,KshamakePapa,KshamaKiMa,KshamaKaNo.,Alwar,CSE,Female,200310080169,B.Tech,2020
+a,a,a,a,a,a,CSE,Female,a,B.Tech,a
+a,a,a,a,a,a,CSE,Male,a,B.Tech,a
+a,a,a,a,a,a,CSE,Male,a,B.Tech,a
+aba,ba,aba,aba,aba,aba,CSE,Male,aba,B.Tech,aba
+aba,aba,aba,ab,aba,kb,CSE,Male,kbjc,B.Tech,kcb
+aba,aba,aba,aba,aba,aba,CSE,Male,ab,B.Tech,aba
+aba,aba,abbd,lwufic,lv,ludv,CSE,Female,uilwfv,M.Tech,bhk
